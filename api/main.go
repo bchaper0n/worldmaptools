@@ -2,70 +2,49 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
-	"net/http"
-	"time"
+	"log"
+	"os"
 
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
+	"go.mongodb.org/mongo-driver/v2/bson"
+	"go.mongodb.org/mongo-driver/v2/mongo"
+	"go.mongodb.org/mongo-driver/v2/mongo/options"
 )
 
-func connect(uri string) (*mongo.Client, context.Context,
-	context.CancelFunc, error) {
-
-	ctx, cancel := context.WithTimeout(context.Background(),
-		30*time.Second)
-
-	client, err := mongo.Connect(ctx, options.Client().ApplyURI(uri))
-
-	return client, ctx, cancel, err
-}
-
-func close(client *mongo.Client, ctx context.Context,
-	cancel context.CancelFunc) {
-
-	// CancelFunc to cancel to context
-	defer cancel()
-
-	// client provides a method to close
-	// a mongoDB connection.
-	defer func() {
-
-		// client.Disconnect method also has deadline.
-		// returns error if any,
-		if err := client.Disconnect(ctx); err != nil {
-			panic(err)
-		}
-	}()
-}
-
-func ping(client *mongo.Client, ctx context.Context) error {
-
-	// mongo.Client has Ping to ping mongoDB, deadline of
-	// the Ping method will be determined by cxt
-	// Ping method return error if any occurred, then
-	// the error can be handled.
-	if err := client.Ping(ctx, readpref.Primary()); err != nil {
-		return err
-	}
-	fmt.Println("connected successfully")
-	return nil
-}
-
 func main() {
-	client, ctx, cancel, err := connect("mongodb://localhost:27017")
+	uri := os.Getenv("mongodb://localhost:27017")
+	docs := "www.mongodb.com/docs/drivers/go/current/"
+	if uri == "" {
+		log.Fatal("Set your 'MONGODB_URI' environment variable. " +
+			"See: " + docs +
+			"usage-examples/#environment-variable")
+	}
+	client, err := mongo.Connect(options.Client().
+		ApplyURI(uri))
 	if err != nil {
 		panic(err)
 	}
-
-	defer close(client, ctx, cancel)
-
-	ping(client, ctx)
-
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello World!")
-	})
-
-	http.ListenAndServe(":8080", nil)
+	defer func() {
+		if err := client.Disconnect(context.TODO()); err != nil {
+			panic(err)
+		}
+	}()
+	coll := client.Database("sample_mflix").Collection("movies")
+	title := "Back to the Future"
+	var result bson.M
+	err = coll.FindOne(context.TODO(), bson.D{{"title", title}}).
+		Decode(&result)
+	if err == mongo.ErrNoDocuments {
+		fmt.Printf("No document was found with the title %s\n", title)
+		return
+	}
+	if err != nil {
+		panic(err)
+	}
+	jsonData, err := json.MarshalIndent(result, "", "    ")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Printf("%s\n", jsonData)
 }
