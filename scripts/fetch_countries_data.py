@@ -36,40 +36,40 @@ def main():
 
     fnum = 0
 
-    with open(os.path.join(data_path, country_data_filenames[fnum])) as f:
+    with open(os.path.join(data_path, country_data_filenames[fnum]), encoding='utf-8') as f:
         countries = json.load(f)
     fnum += 1
 
     # get country and capital
-    with open(os.path.join(data_path, country_data_filenames[fnum])) as f:
+    with open(os.path.join(data_path, country_data_filenames[fnum]), encoding='utf-8') as f:
         capitals = json.load(f)
     fnum += 1
 
     # get abbreviations
-    with open(os.path.join(data_path, country_data_filenames[fnum])) as f:
+    with open(os.path.join(data_path, country_data_filenames[fnum]), encoding='utf-8') as f:
         abbrvs = json.load(f)
     fnum += 1
 
     # get continents
-    with open(os.path.join(data_path, country_data_filenames[fnum])) as f:
+    with open(os.path.join(data_path, country_data_filenames[fnum]), encoding='utf-8') as f:
         continents = json.load(f)
     fnum += 1
 
     # get geographical coordinates
-    with open(os.path.join(data_path, country_data_filenames[fnum])) as f:
+    with open(os.path.join(data_path, country_data_filenames[fnum]), encoding='utf-8') as f:
         coords = json.load(f)
     fnum += 1
 
     # get flags
-    with open(os.path.join(data_path, country_data_filenames[fnum])) as f:
+    with open(os.path.join(data_path, country_data_filenames[fnum]), encoding='utf-8') as f:
         flags = json.load(f)
 
-
-    #print(f"{len(countries)} vs {len(abbrvs)}")
-
+    # fix missing info and typos
     clean_country_data()
 
-    #print(f"{len(countries)} vs {len(abbrvs)}")
+    # add country indexes (FOR TESTING)
+    #for i in range(len(countries)):
+        #countries[i].update({"index": str(i+1)})
 
     # add capitals
     for i in range(len(countries)):
@@ -78,28 +78,39 @@ def main():
             countries[i].update({"capital city": capitals[i]["city"]})
             #print(countries[i]) 
         else:
-            print(f"country mismatch at index {i}: {countries[i]["country"]} and {capitals[i]["country"]}")
+            print(f"capital country mismatch at index {i}: {countries[i]["country"]} and {capitals[i]["country"]}")
             break
 
     # add abbrvs
     for i in range(len(countries)):
-        if countries[i]["country"] == "Holy See (Vatican City State)":
-            print(i)
-
         if countries[i]["country"] == abbrvs[i]["country"]: # double check if countries match
             #print(countries[i])
             countries[i].update({"abbreviation": abbrvs[i]["abbreviation"]})
             #print(countries[i]) 
         else:
-            print(f"country mismatch at index {i}: {countries[i]["country"]} and {abbrvs[i]["country"]}")
+            print(f"abbrv country mismatch at index {i}: {countries[i]["country"]} and {abbrvs[i]["country"]}")
+            break
+    
+    # add continents
+    for i in range(len(countries)):
+        if countries[i]["country"] == continents[i]["country"]: # double check if countries match
+            #print(countries[i])
+            countries[i].update({"continent": continents[i]["continent"]})
+            #print(countries[i]) 
+        else:
+            print(f"continent country mismatch at index {i}: {countries[i]["country"]} and {continents[i]["country"]}")
             break
 
     #print(json.dumps(countries, indent=3))
+    with open('countries.json', 'w', encoding='utf-8') as f:
+        json.dump(countries, f, ensure_ascii=False, indent=4)
+
 
 def clean_country_data():
     global countries
     global capitals
     global abbrvs
+    global continents
 
     # Ivory Coast wrong place
     ivory_coast = countries.pop(52)
@@ -115,40 +126,54 @@ def clean_country_data():
     countries.insert(218, drc)
     capitals[215]["country"] = "The Democratic Republic of the Congo"
     abbrvs[216]["country"] = "The Democratic Republic of the Congo"
+    continents[215]["country"] = "The Democratic Republic of the Congo"
 
-    # missing Guernsey capital
+    # missing Guernsey capital and continent
     guernsey = {"country": "Guernsey", "city": "Saint Peter Port"}
     capitals.insert(89, guernsey)
+    guernsey2 = {"country": "Guernsey", "continent": "Europe"}
+    continents.insert(89, guernsey2)
 
-    # missing Isle of Man capital
+    # missing Isle of Man capital and continent
     iom = {"country": "Isle of Man", "city": "Douglas"}
     capitals.insert(106, iom)
-    
-    # missing Jersey capital
+    iom_2 = {"country": "Isle of Man", "continent": "Europe"}
+    continents.insert(106, iom_2)
+
+    # missing Jersey capital and continent
     jersey = {"country": "Jersey", "city": "St Helier"}
     capitals.insert(111, jersey)
+    jersey_2 = {"country": "Jersey", "continent": "Europe"}
+    continents.insert(111, jersey_2)
 
     # Montserrat wrong place
     montserrat = countries.pop(145)
     countries.insert(146, montserrat)
 
-    # missing Timor-Leste capital
+    # missing Timor-Leste capital and continent
     t_l = {"country": "Timor-Leste", "city": "Dili"}
     capitals.insert(219, t_l)
+    t_l_2 = {"country": "Timor-Leste", "continent": "Asia"}
+    continents.insert(219, t_l_2)
 
     #add and rename Vatican City
     vc = {"country": "Vatican City"}
-    countries.insert(239, vc)
-    capitals[239]["country"] = "Vatican City"
-    capitals[239]["city"] = "Vatican City"
-    vc_cap = {"country": "Vatican City", "abbreviation": "VA"}
-    abbrvs.insert(237, vc_cap)
+    countries.insert(238, vc)
+    capitals.pop(239)
+    vc_cap = {"country": "Vatican City", "city": "Vatican City"}
+    capitals.insert(238, vc_cap)
+    vc_abbr = {"country": "Vatican City", "abbreviation": "VA"}
+    abbrvs.insert(236, vc_abbr)
+    vc_cont = {"country": "Vatican City", "continent": "Europe"}
+    continents.insert(238, vc_cont)
 
     # Israel wrong order
     is_1 = countries.pop(105)
     countries.insert(106, is_1)
     is_2 = capitals.pop(105)
     capitals.insert(106, is_2)
+    is_3 = continents.pop(105)
+    continents.insert(106, is_3)
 
     # missing England, Scotland, and Wales abbrv
     en = {"country": "England", "abbreviation": "GB"}
@@ -162,6 +187,14 @@ def clean_country_data():
     countries.pop(95)
     capitals.pop(95)
     abbrvs.pop(95)
+    continents.pop(95)
+
+    # missing British Indian Ocean Territory capital
+    capitals[30]["city"] = "Diego Garcia"
+
+    # missing South Georgia and the South Sandwich Islands capital
+    capitals[203]["city"] = "King Edward Point"
+
 
 # get country data from repo and delete unneeded files
 def get_country_data():
