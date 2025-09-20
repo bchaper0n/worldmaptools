@@ -5,5 +5,6 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root') as Element);
 root.render(
   <h1>hello world!</h1>
+  //TODO: incorporate: https://www.react-simple-maps.io/docs/map-files/
 );
 
