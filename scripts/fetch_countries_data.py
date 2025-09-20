@@ -64,41 +64,41 @@ def main():
     with open(os.path.join(data_path, country_data_filenames[fnum]), encoding='utf-8') as f:
         flags = json.load(f)
 
-    # fix missing info and typos
-    clean_country_data()
+    # rename 'country' key to 'name'
+    for i in range(len(countries)):
+        countries[i].update({"name": countries[i]["country"]})
+        countries[i].pop("country", None)
 
-    # add country indexes (FOR TESTING)
-    #for i in range(len(countries)):
-        #countries[i].update({"index": str(i+1)})
+    clean_country_data()
 
     # add capitals
     for i in range(len(countries)):
-        if countries[i]["country"] == capitals[i]["country"]: # double check if countries match
+        if countries[i]["name"] == capitals[i]["country"]: # double check if countries match
             #print(countries[i])
-            countries[i].update({"capital city": capitals[i]["city"]})
+            countries[i].update({"capital_city": capitals[i]["city"]})
             #print(countries[i]) 
         else:
-            print(f"capital country mismatch at index {i}: {countries[i]["country"]} and {capitals[i]["country"]}")
+            print(f"capital country mismatch at index {i}: {countries[i]["name"]} and {capitals[i]["country"]}")
             break
 
     # add abbrvs
     for i in range(len(countries)):
-        if countries[i]["country"] == abbrvs[i]["country"]: # double check if countries match
+        if countries[i]["name"] == abbrvs[i]["country"]: # double check if countries match
             #print(countries[i])
             countries[i].update({"abbreviation": abbrvs[i]["abbreviation"]})
             #print(countries[i]) 
         else:
-            print(f"abbrv country mismatch at index {i}: {countries[i]["country"]} and {abbrvs[i]["country"]}")
+            print(f"abbrv country mismatch at index {i}: {countries[i]["name"]} and {abbrvs[i]["country"]}")
             break
     
     # add continents
     for i in range(len(countries)):
-        if countries[i]["country"] == continents[i]["country"]: # double check if countries match
+        if countries[i]["name"] == continents[i]["country"]: # double check if countries match
             #print(countries[i])
             countries[i].update({"continent": continents[i]["continent"]})
             #print(countries[i]) 
         else:
-            print(f"continent country mismatch at index {i}: {countries[i]["country"]} and {continents[i]["country"]}")
+            print(f"continent country mismatch at index {i}: {countries[i]["name"]} and {continents[i]["country"]}")
             break
 
     #print(json.dumps(countries, indent=3))
@@ -130,7 +130,7 @@ def clean_country_data():
 
     # DRC wrong place and add 2nd "the"
     drc = countries.pop(49)
-    drc["country"] = "The Democratic Republic of the Congo"
+    drc["name"] = "The Democratic Republic of the Congo"
     countries.insert(218, drc)
     capitals[215]["country"] = "The Democratic Republic of the Congo"
     abbrvs[216]["country"] = "The Democratic Republic of the Congo"
@@ -165,7 +165,7 @@ def clean_country_data():
     continents.insert(219, t_l_2)
 
     #add and rename Vatican City
-    vc = {"country": "Vatican City"}
+    vc = {"name": "Vatican City"}
     countries.insert(238, vc)
     capitals.pop(239)
     vc_cap = {"country": "Vatican City", "city": "Vatican City"}

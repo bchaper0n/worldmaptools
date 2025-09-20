@@ -1,1489 +1,1489 @@
 [
     {
-        "country": "Afghanistan",
-        "capital city": "Kabul",
+        "name": "Afghanistan",
+        "capital_city": "Kabul",
         "abbreviation": "AF",
         "continent": "Asia"
     },
     {
-        "country": "Albania",
-        "capital city": "Tirana",
+        "name": "Albania",
+        "capital_city": "Tirana",
         "abbreviation": "AL",
         "continent": "Europe"
     },
     {
-        "country": "Algeria",
-        "capital city": "Alger",
+        "name": "Algeria",
+        "capital_city": "Alger",
         "abbreviation": "DZ",
         "continent": "Africa"
     },
     {
-        "country": "American Samoa",
-        "capital city": "Fagatogo",
+        "name": "American Samoa",
+        "capital_city": "Fagatogo",
         "abbreviation": "AS",
         "continent": "Oceania"
     },
     {
-        "country": "Andorra",
-        "capital city": "Andorra la Vella",
+        "name": "Andorra",
+        "capital_city": "Andorra la Vella",
         "abbreviation": "AD",
         "continent": "Europe"
     },
     {
-        "country": "Angola",
-        "capital city": "Luanda",
+        "name": "Angola",
+        "capital_city": "Luanda",
         "abbreviation": "AO",
         "continent": "Africa"
     },
     {
-        "country": "Anguilla",
-        "capital city": "The Valley",
+        "name": "Anguilla",
+        "capital_city": "The Valley",
         "abbreviation": "AI",
         "continent": "North America"
     },
     {
-        "country": "Antarctica",
-        "capital city": null,
+        "name": "Antarctica",
+        "capital_city": null,
         "abbreviation": "AQ",
         "continent": "Antarctica"
     },
     {
-        "country": "Antigua and Barbuda",
-        "capital city": "Saint John's",
+        "name": "Antigua and Barbuda",
+        "capital_city": "Saint John's",
         "abbreviation": "AG",
         "continent": "North America"
     },
     {
-        "country": "Argentina",
-        "capital city": "Buenos Aires",
+        "name": "Argentina",
+        "capital_city": "Buenos Aires",
         "abbreviation": "AR",
         "continent": "South America"
     },
     {
-        "country": "Armenia",
-        "capital city": "Yerevan",
+        "name": "Armenia",
+        "capital_city": "Yerevan",
         "abbreviation": "AM",
         "continent": "Asia"
     },
     {
-        "country": "Aruba",
-        "capital city": "Oranjestad",
+        "name": "Aruba",
+        "capital_city": "Oranjestad",
         "abbreviation": "AW",
         "continent": "North America"
     },
     {
-        "country": "Australia",
-        "capital city": "Canberra",
+        "name": "Australia",
+        "capital_city": "Canberra",
         "abbreviation": "AU",
         "continent": "Oceania"
     },
     {
-        "country": "Austria",
-        "capital city": "Wien",
+        "name": "Austria",
+        "capital_city": "Wien",
         "abbreviation": "AT",
         "continent": "Europe"
     },
     {
-        "country": "Azerbaijan",
-        "capital city": "Baku",
+        "name": "Azerbaijan",
+        "capital_city": "Baku",
         "abbreviation": "AZ",
         "continent": "Asia"
     },
     {
-        "country": "Bahamas",
-        "capital city": "Nassau",
+        "name": "Bahamas",
+        "capital_city": "Nassau",
         "abbreviation": "BS",
         "continent": "North America"
     },
     {
-        "country": "Bahrain",
-        "capital city": "al-Manama",
+        "name": "Bahrain",
+        "capital_city": "al-Manama",
         "abbreviation": "BH",
         "continent": "Asia"
     },
     {
-        "country": "Bangladesh",
-        "capital city": "Dhaka",
+        "name": "Bangladesh",
+        "capital_city": "Dhaka",
         "abbreviation": "BD",
         "continent": "Asia"
     },
     {
-        "country": "Barbados",
-        "capital city": "Bridgetown",
+        "name": "Barbados",
+        "capital_city": "Bridgetown",
         "abbreviation": "BB",
         "continent": "North America"
     },
     {
-        "country": "Belarus",
-        "capital city": "Minsk",
+        "name": "Belarus",
+        "capital_city": "Minsk",
         "abbreviation": "BY",
         "continent": "Europe"
     },
     {
-        "country": "Belgium",
-        "capital city": "Bruxelles [Brussel]",
+        "name": "Belgium",
+        "capital_city": "Bruxelles [Brussel]",
         "abbreviation": "BE",
         "continent": "Europe"
     },
     {
-        "country": "Belize",
-        "capital city": "Belmopan",
+        "name": "Belize",
+        "capital_city": "Belmopan",
         "abbreviation": "BZ",
         "continent": "North America"
     },
     {
-        "country": "Benin",
-        "capital city": "Porto-Novo",
+        "name": "Benin",
+        "capital_city": "Porto-Novo",
         "abbreviation": "BJ",
         "continent": "Africa"
     },
     {
-        "country": "Bermuda",
-        "capital city": "Hamilton",
+        "name": "Bermuda",
+        "capital_city": "Hamilton",
         "abbreviation": "BM",
         "continent": "North America"
     },
     {
-        "country": "Bhutan",
-        "capital city": "Thimphu",
+        "name": "Bhutan",
+        "capital_city": "Thimphu",
         "abbreviation": "BT",
         "continent": "Asia"
     },
     {
-        "country": "Bolivia",
-        "capital city": "La Paz",
+        "name": "Bolivia",
+        "capital_city": "La Paz",
         "abbreviation": "BO",
         "continent": "South America"
     },
     {
-        "country": "Bosnia and Herzegovina",
-        "capital city": "Sarajevo",
+        "name": "Bosnia and Herzegovina",
+        "capital_city": "Sarajevo",
         "abbreviation": "BA",
         "continent": "Europe"
     },
     {
-        "country": "Botswana",
-        "capital city": "Gaborone",
+        "name": "Botswana",
+        "capital_city": "Gaborone",
         "abbreviation": "BW",
         "continent": "Africa"
     },
     {
-        "country": "Bouvet Island",
-        "capital city": null,
+        "name": "Bouvet Island",
+        "capital_city": null,
         "abbreviation": "BV",
         "continent": "Antarctica"
     },
     {
-        "country": "Brazil",
-        "capital city": "Brasília",
+        "name": "Brazil",
+        "capital_city": "Brasília",
         "abbreviation": "BR",
         "continent": "South America"
     },
     {
-        "country": "British Indian Ocean Territory",
-        "capital city": "Diego Garcia",
+        "name": "British Indian Ocean Territory",
+        "capital_city": "Diego Garcia",
         "abbreviation": "IO",
         "continent": "Africa"
     },
     {
-        "country": "Brunei",
-        "capital city": "Bandar Seri Begawan",
+        "name": "Brunei",
+        "capital_city": "Bandar Seri Begawan",
         "abbreviation": "BN",
         "continent": "Asia"
     },
     {
-        "country": "Bulgaria",
-        "capital city": "Sofia",
+        "name": "Bulgaria",
+        "capital_city": "Sofia",
         "abbreviation": "BG",
         "continent": "Europe"
     },
     {
-        "country": "Burkina Faso",
-        "capital city": "Ouagadougou",
+        "name": "Burkina Faso",
+        "capital_city": "Ouagadougou",
         "abbreviation": "BF",
         "continent": "Africa"
     },
     {
-        "country": "Burundi",
-        "capital city": "Bujumbura",
+        "name": "Burundi",
+        "capital_city": "Bujumbura",
         "abbreviation": "BI",
         "continent": "Africa"
     },
     {
-        "country": "Cambodia",
-        "capital city": "Phnom Penh",
+        "name": "Cambodia",
+        "capital_city": "Phnom Penh",
         "abbreviation": "KH",
         "continent": "Asia"
     },
     {
-        "country": "Cameroon",
-        "capital city": "Yaounde",
+        "name": "Cameroon",
+        "capital_city": "Yaounde",
         "abbreviation": "CM",
         "continent": "Africa"
     },
     {
-        "country": "Canada",
-        "capital city": "Ottawa",
+        "name": "Canada",
+        "capital_city": "Ottawa",
         "abbreviation": "CA",
         "continent": "North America"
     },
     {
-        "country": "Cape Verde",
-        "capital city": "Praia",
+        "name": "Cape Verde",
+        "capital_city": "Praia",
         "abbreviation": "CV",
         "continent": "Africa"
     },
     {
-        "country": "Cayman Islands",
-        "capital city": "George Town",
+        "name": "Cayman Islands",
+        "capital_city": "George Town",
         "abbreviation": "KY",
         "continent": "North America"
     },
     {
-        "country": "Central African Republic",
-        "capital city": "Bangui",
+        "name": "Central African Republic",
+        "capital_city": "Bangui",
         "abbreviation": "CF",
         "continent": "Africa"
     },
     {
-        "country": "Chad",
-        "capital city": "N'Djamena",
+        "name": "Chad",
+        "capital_city": "N'Djamena",
         "abbreviation": "TD",
         "continent": "Africa"
     },
     {
-        "country": "Chile",
-        "capital city": "Santiago de Chile",
+        "name": "Chile",
+        "capital_city": "Santiago de Chile",
         "abbreviation": "CL",
         "continent": "South America"
     },
     {
-        "country": "China",
-        "capital city": "Peking",
+        "name": "China",
+        "capital_city": "Peking",
         "abbreviation": "CN",
         "continent": "Asia"
     },
     {
-        "country": "Christmas Island",
-        "capital city": "Flying Fish Cove",
+        "name": "Christmas Island",
+        "capital_city": "Flying Fish Cove",
         "abbreviation": "CX",
         "continent": "Oceania"
     },
     {
-        "country": "Cocos (Keeling) Islands",
-        "capital city": "West Island",
+        "name": "Cocos (Keeling) Islands",
+        "capital_city": "West Island",
         "abbreviation": "CC",
         "continent": "Oceania"
     },
     {
-        "country": "Colombia",
-        "capital city": "Bogota",
+        "name": "Colombia",
+        "capital_city": "Bogota",
         "abbreviation": "CO",
         "continent": "South America"
     },
     {
-        "country": "Comoros",
-        "capital city": "Moroni",
+        "name": "Comoros",
+        "capital_city": "Moroni",
         "abbreviation": "KM",
         "continent": "Africa"
     },
     {
-        "country": "Congo",
-        "capital city": "Brazzaville",
+        "name": "Congo",
+        "capital_city": "Brazzaville",
         "abbreviation": "CG",
         "continent": "Africa"
     },
     {
-        "country": "Cook Islands",
-        "capital city": "Avarua",
+        "name": "Cook Islands",
+        "capital_city": "Avarua",
         "abbreviation": "CK",
         "continent": "Oceania"
     },
     {
-        "country": "Costa Rica",
-        "capital city": "San José",
+        "name": "Costa Rica",
+        "capital_city": "San José",
         "abbreviation": "CR",
         "continent": "North America"
     },
     {
-        "country": "Croatia",
-        "capital city": "Zagreb",
+        "name": "Croatia",
+        "capital_city": "Zagreb",
         "abbreviation": "HR",
         "continent": "Europe"
     },
     {
-        "country": "Cuba",
-        "capital city": "La Habana",
+        "name": "Cuba",
+        "capital_city": "La Habana",
         "abbreviation": "CU",
         "continent": "North America"
     },
     {
-        "country": "Cyprus",
-        "capital city": "Nicosia",
+        "name": "Cyprus",
+        "capital_city": "Nicosia",
         "abbreviation": "CY",
         "continent": "Asia"
     },
     {
-        "country": "Czech Republic",
-        "capital city": "Praha",
+        "name": "Czech Republic",
+        "capital_city": "Praha",
         "abbreviation": "CZ",
         "continent": "Europe"
     },
     {
-        "country": "Denmark",
-        "capital city": "Copenhagen",
+        "name": "Denmark",
+        "capital_city": "Copenhagen",
         "abbreviation": "DK",
         "continent": "Europe"
     },
     {
-        "country": "Djibouti",
-        "capital city": "Djibouti",
+        "name": "Djibouti",
+        "capital_city": "Djibouti",
         "abbreviation": "DJ",
         "continent": "Africa"
     },
     {
-        "country": "Dominica",
-        "capital city": "Roseau",
+        "name": "Dominica",
+        "capital_city": "Roseau",
         "abbreviation": "DM",
         "continent": "North America"
     },
     {
-        "country": "Dominican Republic",
-        "capital city": "Santo Domingo de Guzm",
+        "name": "Dominican Republic",
+        "capital_city": "Santo Domingo de Guzm",
         "abbreviation": "DO",
         "continent": "North America"
     },
     {
-        "country": "East Timor",
-        "capital city": "Dili",
+        "name": "East Timor",
+        "capital_city": "Dili",
         "abbreviation": "TP",
         "continent": "Asia"
     },
     {
-        "country": "Ecuador",
-        "capital city": "Quito",
+        "name": "Ecuador",
+        "capital_city": "Quito",
         "abbreviation": "EC",
         "continent": "South America"
     },
     {
-        "country": "Egypt",
-        "capital city": "Cairo",
+        "name": "Egypt",
+        "capital_city": "Cairo",
         "abbreviation": "EG",
         "continent": "Africa"
     },
     {
-        "country": "El Salvador",
-        "capital city": "San Salvador",
+        "name": "El Salvador",
+        "capital_city": "San Salvador",
         "abbreviation": "SV",
         "continent": "North America"
     },
     {
-        "country": "England",
-        "capital city": "London",
+        "name": "England",
+        "capital_city": "London",
         "abbreviation": "GB",
         "continent": "Europe"
     },
     {
-        "country": "Equatorial Guinea",
-        "capital city": "Malabo",
+        "name": "Equatorial Guinea",
+        "capital_city": "Malabo",
         "abbreviation": "GQ",
         "continent": "Africa"
     },
     {
-        "country": "Eritrea",
-        "capital city": "Asmara",
+        "name": "Eritrea",
+        "capital_city": "Asmara",
         "abbreviation": "ER",
         "continent": "Africa"
     },
     {
-        "country": "Estonia",
-        "capital city": "Tallinn",
+        "name": "Estonia",
+        "capital_city": "Tallinn",
         "abbreviation": "EE",
         "continent": "Europe"
     },
     {
-        "country": "Eswatini",
-        "capital city": "Mbabane",
+        "name": "Eswatini",
+        "capital_city": "Mbabane",
         "abbreviation": "SZ",
         "continent": "Africa"
     },
     {
-        "country": "Ethiopia",
-        "capital city": "Addis Abeba",
+        "name": "Ethiopia",
+        "capital_city": "Addis Abeba",
         "abbreviation": "ET",
         "continent": "Africa"
     },
     {
-        "country": "Falkland Islands",
-        "capital city": "Stanley",
+        "name": "Falkland Islands",
+        "capital_city": "Stanley",
         "abbreviation": "FK",
         "continent": "South America"
     },
     {
-        "country": "Faroe Islands",
-        "capital city": "Tórshavn",
+        "name": "Faroe Islands",
+        "capital_city": "Tórshavn",
         "abbreviation": "FO",
         "continent": "Europe"
     },
     {
-        "country": "Fiji Islands",
-        "capital city": "Suva",
+        "name": "Fiji Islands",
+        "capital_city": "Suva",
         "abbreviation": "FJ",
         "continent": "Oceania"
     },
     {
-        "country": "Finland",
-        "capital city": "Helsinki [Helsingfors]",
+        "name": "Finland",
+        "capital_city": "Helsinki [Helsingfors]",
         "abbreviation": "FI",
         "continent": "Europe"
     },
     {
-        "country": "France",
-        "capital city": "Paris",
+        "name": "France",
+        "capital_city": "Paris",
         "abbreviation": "FR",
         "continent": "Europe"
     },
     {
-        "country": "French Guiana",
-        "capital city": "Cayenne",
+        "name": "French Guiana",
+        "capital_city": "Cayenne",
         "abbreviation": "GF",
         "continent": "South America"
     },
     {
-        "country": "French Polynesia",
-        "capital city": "Papeete",
+        "name": "French Polynesia",
+        "capital_city": "Papeete",
         "abbreviation": "PF",
         "continent": "Oceania"
     },
     {
-        "country": "French Southern territories",
-        "capital city": null,
+        "name": "French Southern territories",
+        "capital_city": null,
         "abbreviation": "TF",
         "continent": "Antarctica"
     },
     {
-        "country": "Gabon",
-        "capital city": "Libreville",
+        "name": "Gabon",
+        "capital_city": "Libreville",
         "abbreviation": "GA",
         "continent": "Africa"
     },
     {
-        "country": "Gambia",
-        "capital city": "Banjul",
+        "name": "Gambia",
+        "capital_city": "Banjul",
         "abbreviation": "GM",
         "continent": "Africa"
     },
     {
-        "country": "Georgia",
-        "capital city": "Tbilisi",
+        "name": "Georgia",
+        "capital_city": "Tbilisi",
         "abbreviation": "GE",
         "continent": "Asia"
     },
     {
-        "country": "Germany",
-        "capital city": "Berlin",
+        "name": "Germany",
+        "capital_city": "Berlin",
         "abbreviation": "DE",
         "continent": "Europe"
     },
     {
-        "country": "Ghana",
-        "capital city": "Accra",
+        "name": "Ghana",
+        "capital_city": "Accra",
         "abbreviation": "GH",
         "continent": "Africa"
     },
     {
-        "country": "Gibraltar",
-        "capital city": "Gibraltar",
+        "name": "Gibraltar",
+        "capital_city": "Gibraltar",
         "abbreviation": "GI",
         "continent": "Europe"
     },
     {
-        "country": "Greece",
-        "capital city": "Athenai",
+        "name": "Greece",
+        "capital_city": "Athenai",
         "abbreviation": "GR",
         "continent": "Europe"
     },
     {
-        "country": "Greenland",
-        "capital city": "Nuuk",
+        "name": "Greenland",
+        "capital_city": "Nuuk",
         "abbreviation": "GL",
         "continent": "North America"
     },
     {
-        "country": "Grenada",
-        "capital city": "Saint George's",
+        "name": "Grenada",
+        "capital_city": "Saint George's",
         "abbreviation": "GD",
         "continent": "North America"
     },
     {
-        "country": "Guadeloupe",
-        "capital city": "Basse-Terre",
+        "name": "Guadeloupe",
+        "capital_city": "Basse-Terre",
         "abbreviation": "GP",
         "continent": "North America"
     },
     {
-        "country": "Guam",
-        "capital city": "Aga",
+        "name": "Guam",
+        "capital_city": "Aga",
         "abbreviation": "GU",
         "continent": "Oceania"
     },
     {
-        "country": "Guatemala",
-        "capital city": "Ciudad de Guatemala",
+        "name": "Guatemala",
+        "capital_city": "Ciudad de Guatemala",
         "abbreviation": "GT",
         "continent": "North America"
     },
     {
-        "country": "Guernsey",
-        "capital city": "Saint Peter Port",
+        "name": "Guernsey",
+        "capital_city": "Saint Peter Port",
         "abbreviation": "GG",
         "continent": "Europe"
     },
     {
-        "country": "Guinea",
-        "capital city": "Conakry",
+        "name": "Guinea",
+        "capital_city": "Conakry",
         "abbreviation": "GN",
         "continent": "Africa"
     },
     {
-        "country": "Guinea-Bissau",
-        "capital city": "Bissau",
+        "name": "Guinea-Bissau",
+        "capital_city": "Bissau",
         "abbreviation": "GW",
         "continent": "Africa"
     },
     {
-        "country": "Guyana",
-        "capital city": "Georgetown",
+        "name": "Guyana",
+        "capital_city": "Georgetown",
         "abbreviation": "GY",
         "continent": "South America"
     },
     {
-        "country": "Haiti",
-        "capital city": "Port-au-Prince",
+        "name": "Haiti",
+        "capital_city": "Port-au-Prince",
         "abbreviation": "HT",
         "continent": "North America"
     },
     {
-        "country": "Heard Island and McDonald Islands",
-        "capital city": null,
+        "name": "Heard Island and McDonald Islands",
+        "capital_city": null,
         "abbreviation": "HM",
         "continent": "Antarctica"
     },
     {
-        "country": "Honduras",
-        "capital city": "Tegucigalpa",
+        "name": "Honduras",
+        "capital_city": "Tegucigalpa",
         "abbreviation": "HN",
         "continent": "North America"
     },
     {
-        "country": "Hong Kong",
-        "capital city": "Victoria",
+        "name": "Hong Kong",
+        "capital_city": "Victoria",
         "abbreviation": "HK",
         "continent": "Asia"
     },
     {
-        "country": "Hungary",
-        "capital city": "Budapest",
+        "name": "Hungary",
+        "capital_city": "Budapest",
         "abbreviation": "HU",
         "continent": "Europe"
     },
     {
-        "country": "Iceland",
-        "capital city": "Reykjavík",
+        "name": "Iceland",
+        "capital_city": "Reykjavík",
         "abbreviation": "IS",
         "continent": "Europe"
     },
     {
-        "country": "India",
-        "capital city": "New Delhi",
+        "name": "India",
+        "capital_city": "New Delhi",
         "abbreviation": "IN",
         "continent": "Asia"
     },
     {
-        "country": "Indonesia",
-        "capital city": "Jakarta",
+        "name": "Indonesia",
+        "capital_city": "Jakarta",
         "abbreviation": "ID",
         "continent": "Asia"
     },
     {
-        "country": "Iran",
-        "capital city": "Tehran",
+        "name": "Iran",
+        "capital_city": "Tehran",
         "abbreviation": "IR",
         "continent": "Asia"
     },
     {
-        "country": "Iraq",
-        "capital city": "Baghdad",
+        "name": "Iraq",
+        "capital_city": "Baghdad",
         "abbreviation": "IQ",
         "continent": "Asia"
     },
     {
-        "country": "Ireland",
-        "capital city": "Dublin",
+        "name": "Ireland",
+        "capital_city": "Dublin",
         "abbreviation": "IE",
         "continent": "Europe"
     },
     {
-        "country": "Isle of Man",
-        "capital city": "Douglas",
+        "name": "Isle of Man",
+        "capital_city": "Douglas",
         "abbreviation": "IM",
         "continent": "Europe"
     },
     {
-        "country": "Israel",
-        "capital city": "Jerusalem",
+        "name": "Israel",
+        "capital_city": "Jerusalem",
         "abbreviation": "IL",
         "continent": "Asia"
     },
     {
-        "country": "Italy",
-        "capital city": "Roma",
+        "name": "Italy",
+        "capital_city": "Roma",
         "abbreviation": "IT",
         "continent": "Europe"
     },
     {
-        "country": "Ivory Coast",
-        "capital city": "Yamoussoukro",
+        "name": "Ivory Coast",
+        "capital_city": "Yamoussoukro",
         "abbreviation": "CI",
         "continent": "Africa"
     },
     {
-        "country": "Jamaica",
-        "capital city": "Kingston",
+        "name": "Jamaica",
+        "capital_city": "Kingston",
         "abbreviation": "JM",
         "continent": "North America"
     },
     {
-        "country": "Japan",
-        "capital city": "Tokyo",
+        "name": "Japan",
+        "capital_city": "Tokyo",
         "abbreviation": "JP",
         "continent": "Asia"
     },
     {
-        "country": "Jersey",
-        "capital city": "St Helier",
+        "name": "Jersey",
+        "capital_city": "St Helier",
         "abbreviation": "JE",
         "continent": "Europe"
     },
     {
-        "country": "Jordan",
-        "capital city": "Amman",
+        "name": "Jordan",
+        "capital_city": "Amman",
         "abbreviation": "JO",
         "continent": "Asia"
     },
     {
-        "country": "Kazakhstan",
-        "capital city": "Astana",
+        "name": "Kazakhstan",
+        "capital_city": "Astana",
         "abbreviation": "KZ",
         "continent": "Asia"
     },
     {
-        "country": "Kenya",
-        "capital city": "Nairobi",
+        "name": "Kenya",
+        "capital_city": "Nairobi",
         "abbreviation": "KE",
         "continent": "Africa"
     },
     {
-        "country": "Kiribati",
-        "capital city": "Bairiki",
+        "name": "Kiribati",
+        "capital_city": "Bairiki",
         "abbreviation": "KI",
         "continent": "Oceania"
     },
     {
-        "country": "Kuwait",
-        "capital city": "Kuwait",
+        "name": "Kuwait",
+        "capital_city": "Kuwait",
         "abbreviation": "KW",
         "continent": "Asia"
     },
     {
-        "country": "Kyrgyzstan",
-        "capital city": "Bishkek",
+        "name": "Kyrgyzstan",
+        "capital_city": "Bishkek",
         "abbreviation": "KG",
         "continent": "Asia"
     },
     {
-        "country": "Laos",
-        "capital city": "Vientiane",
+        "name": "Laos",
+        "capital_city": "Vientiane",
         "abbreviation": "LA",
         "continent": "Asia"
     },
     {
-        "country": "Latvia",
-        "capital city": "Riga",
+        "name": "Latvia",
+        "capital_city": "Riga",
         "abbreviation": "LV",
         "continent": "Europe"
     },
     {
-        "country": "Lebanon",
-        "capital city": "Beirut",
+        "name": "Lebanon",
+        "capital_city": "Beirut",
         "abbreviation": "LB",
         "continent": "Asia"
     },
     {
-        "country": "Lesotho",
-        "capital city": "Maseru",
+        "name": "Lesotho",
+        "capital_city": "Maseru",
         "abbreviation": "LS",
         "continent": "Africa"
     },
     {
-        "country": "Liberia",
-        "capital city": "Monrovia",
+        "name": "Liberia",
+        "capital_city": "Monrovia",
         "abbreviation": "LR",
         "continent": "Africa"
     },
     {
-        "country": "Libya",
-        "capital city": "Tripoli",
+        "name": "Libya",
+        "capital_city": "Tripoli",
         "abbreviation": "LY",
         "continent": "Africa"
     },
     {
-        "country": "Liechtenstein",
-        "capital city": "Vaduz",
+        "name": "Liechtenstein",
+        "capital_city": "Vaduz",
         "abbreviation": "LI",
         "continent": "Europe"
     },
     {
-        "country": "Lithuania",
-        "capital city": "Vilnius",
+        "name": "Lithuania",
+        "capital_city": "Vilnius",
         "abbreviation": "LT",
         "continent": "Europe"
     },
     {
-        "country": "Luxembourg",
-        "capital city": "Luxembourg [Luxemburg/L",
+        "name": "Luxembourg",
+        "capital_city": "Luxembourg [Luxemburg/L",
         "abbreviation": "LU",
         "continent": "Europe"
     },
     {
-        "country": "Macao",
-        "capital city": "Macao",
+        "name": "Macao",
+        "capital_city": "Macao",
         "abbreviation": "MO",
         "continent": "Asia"
     },
     {
-        "country": "North Macedonia",
-        "capital city": "Skopje",
+        "name": "North Macedonia",
+        "capital_city": "Skopje",
         "abbreviation": "MK",
         "continent": "Europe"
     },
     {
-        "country": "Madagascar",
-        "capital city": "Antananarivo",
+        "name": "Madagascar",
+        "capital_city": "Antananarivo",
         "abbreviation": "MG",
         "continent": "Africa"
     },
     {
-        "country": "Malawi",
-        "capital city": "Lilongwe",
+        "name": "Malawi",
+        "capital_city": "Lilongwe",
         "abbreviation": "MW",
         "continent": "Africa"
     },
     {
-        "country": "Malaysia",
-        "capital city": "Kuala Lumpur",
+        "name": "Malaysia",
+        "capital_city": "Kuala Lumpur",
         "abbreviation": "MY",
         "continent": "Asia"
     },
     {
-        "country": "Maldives",
-        "capital city": "Male",
+        "name": "Maldives",
+        "capital_city": "Male",
         "abbreviation": "MV",
         "continent": "Asia"
     },
     {
-        "country": "Mali",
-        "capital city": "Bamako",
+        "name": "Mali",
+        "capital_city": "Bamako",
         "abbreviation": "ML",
         "continent": "Africa"
     },
     {
-        "country": "Malta",
-        "capital city": "Valletta",
+        "name": "Malta",
+        "capital_city": "Valletta",
         "abbreviation": "MT",
         "continent": "Europe"
     },
     {
-        "country": "Marshall Islands",
-        "capital city": "Dalap-Uliga-Darrit",
+        "name": "Marshall Islands",
+        "capital_city": "Dalap-Uliga-Darrit",
         "abbreviation": "MH",
         "continent": "Oceania"
     },
     {
-        "country": "Martinique",
-        "capital city": "Fort-de-France",
+        "name": "Martinique",
+        "capital_city": "Fort-de-France",
         "abbreviation": "MQ",
         "continent": "North America"
     },
     {
-        "country": "Mauritania",
-        "capital city": "Nouakchott",
+        "name": "Mauritania",
+        "capital_city": "Nouakchott",
         "abbreviation": "MR",
         "continent": "Africa"
     },
     {
-        "country": "Mauritius",
-        "capital city": "Port-Louis",
+        "name": "Mauritius",
+        "capital_city": "Port-Louis",
         "abbreviation": "MU",
         "continent": "Africa"
     },
     {
-        "country": "Mayotte",
-        "capital city": "Mamoutzou",
+        "name": "Mayotte",
+        "capital_city": "Mamoutzou",
         "abbreviation": "YT",
         "continent": "Africa"
     },
     {
-        "country": "Mexico",
-        "capital city": "Ciudad de M",
+        "name": "Mexico",
+        "capital_city": "Ciudad de M",
         "abbreviation": "MX",
         "continent": "North America"
     },
     {
-        "country": "Micronesia, Federated States of",
-        "capital city": "Palikir",
+        "name": "Micronesia, Federated States of",
+        "capital_city": "Palikir",
         "abbreviation": "FM",
         "continent": "Oceania"
     },
     {
-        "country": "Moldova",
-        "capital city": "Chisinau",
+        "name": "Moldova",
+        "capital_city": "Chisinau",
         "abbreviation": "MD",
         "continent": "Europe"
     },
     {
-        "country": "Monaco",
-        "capital city": "Monaco-Ville",
+        "name": "Monaco",
+        "capital_city": "Monaco-Ville",
         "abbreviation": "MC",
         "continent": "Europe"
     },
     {
-        "country": "Mongolia",
-        "capital city": "Ulan Bator",
+        "name": "Mongolia",
+        "capital_city": "Ulan Bator",
         "abbreviation": "MN",
         "continent": "Asia"
     },
     {
-        "country": "Montenegro",
-        "capital city": "Podgorica",
+        "name": "Montenegro",
+        "capital_city": "Podgorica",
         "abbreviation": "ME",
         "continent": "Europe"
     },
     {
-        "country": "Montserrat",
-        "capital city": "Plymouth",
+        "name": "Montserrat",
+        "capital_city": "Plymouth",
         "abbreviation": "MS",
         "continent": "North America"
     },
     {
-        "country": "Morocco",
-        "capital city": "Rabat",
+        "name": "Morocco",
+        "capital_city": "Rabat",
         "abbreviation": "MA",
         "continent": "Africa"
     },
     {
-        "country": "Mozambique",
-        "capital city": "Maputo",
+        "name": "Mozambique",
+        "capital_city": "Maputo",
         "abbreviation": "MZ",
         "continent": "Africa"
     },
     {
-        "country": "Myanmar",
-        "capital city": "Rangoon (Yangon)",
+        "name": "Myanmar",
+        "capital_city": "Rangoon (Yangon)",
         "abbreviation": "MM",
         "continent": "Asia"
     },
     {
-        "country": "Namibia",
-        "capital city": "Windhoek",
+        "name": "Namibia",
+        "capital_city": "Windhoek",
         "abbreviation": "NA",
         "continent": "Africa"
     },
     {
-        "country": "Nauru",
-        "capital city": "Yaren",
+        "name": "Nauru",
+        "capital_city": "Yaren",
         "abbreviation": "NR",
         "continent": "Oceania"
     },
     {
-        "country": "Nepal",
-        "capital city": "Kathmandu",
+        "name": "Nepal",
+        "capital_city": "Kathmandu",
         "abbreviation": "NP",
         "continent": "Asia"
     },
     {
-        "country": "Netherlands",
-        "capital city": "Amsterdam",
+        "name": "Netherlands",
+        "capital_city": "Amsterdam",
         "abbreviation": "NL",
         "continent": "Europe"
     },
     {
-        "country": "Netherlands Antilles",
-        "capital city": "Willemstad",
+        "name": "Netherlands Antilles",
+        "capital_city": "Willemstad",
         "abbreviation": "AN",
         "continent": "North America"
     },
     {
-        "country": "New Caledonia",
-        "capital city": "Noum",
+        "name": "New Caledonia",
+        "capital_city": "Noum",
         "abbreviation": "NC",
         "continent": "Oceania"
     },
     {
-        "country": "New Zealand",
-        "capital city": "Wellington",
+        "name": "New Zealand",
+        "capital_city": "Wellington",
         "abbreviation": "NZ",
         "continent": "Oceania"
     },
     {
-        "country": "Nicaragua",
-        "capital city": "Managua",
+        "name": "Nicaragua",
+        "capital_city": "Managua",
         "abbreviation": "NI",
         "continent": "North America"
     },
     {
-        "country": "Niger",
-        "capital city": "Niamey",
+        "name": "Niger",
+        "capital_city": "Niamey",
         "abbreviation": "NE",
         "continent": "Africa"
     },
     {
-        "country": "Nigeria",
-        "capital city": "Abuja",
+        "name": "Nigeria",
+        "capital_city": "Abuja",
         "abbreviation": "NG",
         "continent": "Africa"
     },
     {
-        "country": "Niue",
-        "capital city": "Alofi",
+        "name": "Niue",
+        "capital_city": "Alofi",
         "abbreviation": "NU",
         "continent": "Oceania"
     },
     {
-        "country": "Norfolk Island",
-        "capital city": "Kingston",
+        "name": "Norfolk Island",
+        "capital_city": "Kingston",
         "abbreviation": "NF",
         "continent": "Oceania"
     },
     {
-        "country": "North Korea",
-        "capital city": "Pyongyang",
+        "name": "North Korea",
+        "capital_city": "Pyongyang",
         "abbreviation": "KP",
         "continent": "Asia"
     },
     {
-        "country": "Northern Ireland",
-        "capital city": "Belfast",
+        "name": "Northern Ireland",
+        "capital_city": "Belfast",
         "abbreviation": "GB",
         "continent": "Europe"
     },
     {
-        "country": "Northern Mariana Islands",
-        "capital city": "Garapan",
+        "name": "Northern Mariana Islands",
+        "capital_city": "Garapan",
         "abbreviation": "MP",
         "continent": "Oceania"
     },
     {
-        "country": "Norway",
-        "capital city": "Oslo",
+        "name": "Norway",
+        "capital_city": "Oslo",
         "abbreviation": "NO",
         "continent": "Europe"
     },
     {
-        "country": "Oman",
-        "capital city": "Masqat",
+        "name": "Oman",
+        "capital_city": "Masqat",
         "abbreviation": "OM",
         "continent": "Asia"
     },
     {
-        "country": "Pakistan",
-        "capital city": "Islamabad",
+        "name": "Pakistan",
+        "capital_city": "Islamabad",
         "abbreviation": "PK",
         "continent": "Asia"
     },
     {
-        "country": "Palau",
-        "capital city": "Koror",
+        "name": "Palau",
+        "capital_city": "Koror",
         "abbreviation": "PW",
         "continent": "Oceania"
     },
     {
-        "country": "Palestine",
-        "capital city": "Gaza",
+        "name": "Palestine",
+        "capital_city": "Gaza",
         "abbreviation": "PS",
         "continent": "Asia"
     },
     {
-        "country": "Panama",
-        "capital city": "Ciudad de Panamá",
+        "name": "Panama",
+        "capital_city": "Ciudad de Panamá",
         "abbreviation": "PA",
         "continent": "North America"
     },
     {
-        "country": "Papua New Guinea",
-        "capital city": "Port Moresby",
+        "name": "Papua New Guinea",
+        "capital_city": "Port Moresby",
         "abbreviation": "PG",
         "continent": "Oceania"
     },
     {
-        "country": "Paraguay",
-        "capital city": "Asunción",
+        "name": "Paraguay",
+        "capital_city": "Asunción",
         "abbreviation": "PY",
         "continent": "South America"
     },
     {
-        "country": "Peru",
-        "capital city": "Lima",
+        "name": "Peru",
+        "capital_city": "Lima",
         "abbreviation": "PE",
         "continent": "South America"
     },
     {
-        "country": "Philippines",
-        "capital city": "Manila",
+        "name": "Philippines",
+        "capital_city": "Manila",
         "abbreviation": "PH",
         "continent": "Asia"
     },
     {
-        "country": "Pitcairn",
-        "capital city": "Adamstown",
+        "name": "Pitcairn",
+        "capital_city": "Adamstown",
         "abbreviation": "PN",
         "continent": "Oceania"
     },
     {
-        "country": "Poland",
-        "capital city": "Warszawa",
+        "name": "Poland",
+        "capital_city": "Warszawa",
         "abbreviation": "PL",
         "continent": "Europe"
     },
     {
-        "country": "Portugal",
-        "capital city": "Lisboa",
+        "name": "Portugal",
+        "capital_city": "Lisboa",
         "abbreviation": "PT",
         "continent": "Europe"
     },
     {
-        "country": "Puerto Rico",
-        "capital city": "San Juan",
+        "name": "Puerto Rico",
+        "capital_city": "San Juan",
         "abbreviation": "PR",
         "continent": "North America"
     },
     {
-        "country": "Qatar",
-        "capital city": "Doha",
+        "name": "Qatar",
+        "capital_city": "Doha",
         "abbreviation": "QA",
         "continent": "Asia"
     },
     {
-        "country": "Reunion",
-        "capital city": "Saint-Denis",
+        "name": "Reunion",
+        "capital_city": "Saint-Denis",
         "abbreviation": "RE",
         "continent": "Africa"
     },
     {
-        "country": "Romania",
-        "capital city": "Bucuresti",
+        "name": "Romania",
+        "capital_city": "Bucuresti",
         "abbreviation": "RO",
         "continent": "Europe"
     },
     {
-        "country": "Russia",
-        "capital city": "Moscow",
+        "name": "Russia",
+        "capital_city": "Moscow",
         "abbreviation": "RU",
         "continent": "Europe"
     },
     {
-        "country": "Rwanda",
-        "capital city": "Kigali",
+        "name": "Rwanda",
+        "capital_city": "Kigali",
         "abbreviation": "RW",
         "continent": "Africa"
     },
     {
-        "country": "Saint Helena",
-        "capital city": "Jamestown",
+        "name": "Saint Helena",
+        "capital_city": "Jamestown",
         "abbreviation": "SH",
         "continent": "Africa"
     },
     {
-        "country": "Saint Kitts and Nevis",
-        "capital city": "Basseterre",
+        "name": "Saint Kitts and Nevis",
+        "capital_city": "Basseterre",
         "abbreviation": "KN",
         "continent": "North America"
     },
     {
-        "country": "Saint Lucia",
-        "capital city": "Castries",
+        "name": "Saint Lucia",
+        "capital_city": "Castries",
         "abbreviation": "LC",
         "continent": "North America"
     },
     {
-        "country": "Saint Pierre and Miquelon",
-        "capital city": "Saint-Pierre",
+        "name": "Saint Pierre and Miquelon",
+        "capital_city": "Saint-Pierre",
         "abbreviation": "PM",
         "continent": "North America"
     },
     {
-        "country": "Saint Vincent and the Grenadines",
-        "capital city": "Kingstown",
+        "name": "Saint Vincent and the Grenadines",
+        "capital_city": "Kingstown",
         "abbreviation": "VC",
         "continent": "North America"
     },
     {
-        "country": "Samoa",
-        "capital city": "Apia",
+        "name": "Samoa",
+        "capital_city": "Apia",
         "abbreviation": "WS",
         "continent": "Oceania"
     },
     {
-        "country": "San Marino",
-        "capital city": "San Marino",
+        "name": "San Marino",
+        "capital_city": "San Marino",
         "abbreviation": "SM",
         "continent": "Europe"
     },
     {
-        "country": "Sao Tome and Principe",
-        "capital city": "São Tomé",
+        "name": "Sao Tome and Principe",
+        "capital_city": "São Tomé",
         "abbreviation": "ST",
         "continent": "Africa"
     },
     {
-        "country": "Saudi Arabia",
-        "capital city": "Riyadh",
+        "name": "Saudi Arabia",
+        "capital_city": "Riyadh",
         "abbreviation": "SA",
         "continent": "Asia"
     },
     {
-        "country": "Scotland",
-        "capital city": "Edinburgh",
+        "name": "Scotland",
+        "capital_city": "Edinburgh",
         "abbreviation": "GB",
         "continent": "Europe"
     },
     {
-        "country": "Senegal",
-        "capital city": "Dakar",
+        "name": "Senegal",
+        "capital_city": "Dakar",
         "abbreviation": "SN",
         "continent": "Africa"
     },
     {
-        "country": "Serbia",
-        "capital city": "Belgrade",
+        "name": "Serbia",
+        "capital_city": "Belgrade",
         "abbreviation": "RS",
         "continent": "Europe"
     },
     {
-        "country": "Seychelles",
-        "capital city": "Victoria",
+        "name": "Seychelles",
+        "capital_city": "Victoria",
         "abbreviation": "SC",
         "continent": "Africa"
     },
     {
-        "country": "Sierra Leone",
-        "capital city": "Freetown",
+        "name": "Sierra Leone",
+        "capital_city": "Freetown",
         "abbreviation": "SL",
         "continent": "Africa"
     },
     {
-        "country": "Singapore",
-        "capital city": "Singapore",
+        "name": "Singapore",
+        "capital_city": "Singapore",
         "abbreviation": "SG",
         "continent": "Asia"
     },
     {
-        "country": "Slovakia",
-        "capital city": "Bratislava",
+        "name": "Slovakia",
+        "capital_city": "Bratislava",
         "abbreviation": "SK",
         "continent": "Europe"
     },
     {
-        "country": "Slovenia",
-        "capital city": "Ljubljana",
+        "name": "Slovenia",
+        "capital_city": "Ljubljana",
         "abbreviation": "SI",
         "continent": "Europe"
     },
     {
-        "country": "Solomon Islands",
-        "capital city": "Honiara",
+        "name": "Solomon Islands",
+        "capital_city": "Honiara",
         "abbreviation": "SB",
         "continent": "Oceania"
     },
     {
-        "country": "Somalia",
-        "capital city": "Mogadishu",
+        "name": "Somalia",
+        "capital_city": "Mogadishu",
         "abbreviation": "SO",
         "continent": "Africa"
     },
     {
-        "country": "South Africa",
-        "capital city": "Pretoria",
+        "name": "South Africa",
+        "capital_city": "Pretoria",
         "abbreviation": "ZA",
         "continent": "Africa"
     },
     {
-        "country": "South Georgia and the South Sandwich Islands",
-        "capital city": "King Edward Point",
+        "name": "South Georgia and the South Sandwich Islands",
+        "capital_city": "King Edward Point",
         "abbreviation": "GS",
         "continent": "Antarctica"
     },
     {
-        "country": "South Korea",
-        "capital city": "Seoul",
+        "name": "South Korea",
+        "capital_city": "Seoul",
         "abbreviation": "KR",
         "continent": "Asia"
     },
     {
-        "country": "South Sudan",
-        "capital city": "Juba",
+        "name": "South Sudan",
+        "capital_city": "Juba",
         "abbreviation": "SS",
         "continent": "Africa"
     },
     {
-        "country": "Spain",
-        "capital city": "Madrid",
+        "name": "Spain",
+        "capital_city": "Madrid",
         "abbreviation": "ES",
         "continent": "Europe"
     },
     {
-        "country": "Sri Lanka",
-        "capital city": "Colombo, Sri Jayawardenepura Kotte",
+        "name": "Sri Lanka",
+        "capital_city": "Colombo, Sri Jayawardenepura Kotte",
         "abbreviation": "LK",
         "continent": "Asia"
     },
     {
-        "country": "Sudan",
-        "capital city": "Khartum",
+        "name": "Sudan",
+        "capital_city": "Khartum",
         "abbreviation": "SD",
         "continent": "Africa"
     },
     {
-        "country": "Suriname",
-        "capital city": "Paramaribo",
+        "name": "Suriname",
+        "capital_city": "Paramaribo",
         "abbreviation": "SR",
         "continent": "South America"
     },
     {
-        "country": "Svalbard and Jan Mayen",
-        "capital city": "Longyearbyen",
+        "name": "Svalbard and Jan Mayen",
+        "capital_city": "Longyearbyen",
         "abbreviation": "SJ",
         "continent": "Europe"
     },
     {
-        "country": "Sweden",
-        "capital city": "Stockholm",
+        "name": "Sweden",
+        "capital_city": "Stockholm",
         "abbreviation": "SE",
         "continent": "Europe"
     },
     {
-        "country": "Switzerland",
-        "capital city": "Bern",
+        "name": "Switzerland",
+        "capital_city": "Bern",
         "abbreviation": "CH",
         "continent": "Europe"
     },
     {
-        "country": "Syria",
-        "capital city": "Damascus",
+        "name": "Syria",
+        "capital_city": "Damascus",
         "abbreviation": "SY",
         "continent": "Asia"
     },
     {
-        "country": "Tajikistan",
-        "capital city": "Dushanbe",
+        "name": "Tajikistan",
+        "capital_city": "Dushanbe",
         "abbreviation": "TJ",
         "continent": "Asia"
     },
     {
-        "country": "Tanzania",
-        "capital city": "Dodoma",
+        "name": "Tanzania",
+        "capital_city": "Dodoma",
         "abbreviation": "TZ",
         "continent": "Africa"
     },
     {
-        "country": "Thailand",
-        "capital city": "Bangkok",
+        "name": "Thailand",
+        "capital_city": "Bangkok",
         "abbreviation": "TH",
         "continent": "Asia"
     },
     {
-        "country": "The Democratic Republic of the Congo",
-        "capital city": "Kinshasa",
+        "name": "The Democratic Republic of the Congo",
+        "capital_city": "Kinshasa",
         "abbreviation": "CD",
         "continent": "Africa"
     },
     {
-        "country": "Timor-Leste",
-        "capital city": "Dili",
+        "name": "Timor-Leste",
+        "capital_city": "Dili",
         "abbreviation": "TL",
         "continent": "Asia"
     },
     {
-        "country": "Togo",
-        "capital city": "Lomé",
+        "name": "Togo",
+        "capital_city": "Lomé",
         "abbreviation": "TG",
         "continent": "Africa"
     },
     {
-        "country": "Tokelau",
-        "capital city": "Fakaofo",
+        "name": "Tokelau",
+        "capital_city": "Fakaofo",
         "abbreviation": "TK",
         "continent": "Oceania"
     },
     {
-        "country": "Tonga",
-        "capital city": "Nuku'alofa",
+        "name": "Tonga",
+        "capital_city": "Nuku'alofa",
         "abbreviation": "TO",
         "continent": "Oceania"
     },
     {
-        "country": "Trinidad and Tobago",
-        "capital city": "Port-of-Spain",
+        "name": "Trinidad and Tobago",
+        "capital_city": "Port-of-Spain",
         "abbreviation": "TT",
         "continent": "North America"
     },
     {
-        "country": "Tunisia",
-        "capital city": "Tunis",
+        "name": "Tunisia",
+        "capital_city": "Tunis",
         "abbreviation": "TN",
         "continent": "Africa"
     },
     {
-        "country": "Turkey",
-        "capital city": "Ankara",
+        "name": "Turkey",
+        "capital_city": "Ankara",
         "abbreviation": "TR",
         "continent": "Asia"
     },
     {
-        "country": "Turkmenistan",
-        "capital city": "Ashgabat",
+        "name": "Turkmenistan",
+        "capital_city": "Ashgabat",
         "abbreviation": "TM",
         "continent": "Asia"
     },
     {
-        "country": "Turks and Caicos Islands",
-        "capital city": "Cockburn Town",
+        "name": "Turks and Caicos Islands",
+        "capital_city": "Cockburn Town",
         "abbreviation": "TC",
         "continent": "North America"
     },
     {
-        "country": "Tuvalu",
-        "capital city": "Funafuti",
+        "name": "Tuvalu",
+        "capital_city": "Funafuti",
         "abbreviation": "TV",
         "continent": "Oceania"
     },
     {
-        "country": "Uganda",
-        "capital city": "Kampala",
+        "name": "Uganda",
+        "capital_city": "Kampala",
         "abbreviation": "UG",
         "continent": "Africa"
     },
     {
-        "country": "Ukraine",
-        "capital city": "Kyiv",
+        "name": "Ukraine",
+        "capital_city": "Kyiv",
         "abbreviation": "UA",
         "continent": "Europe"
     },
     {
-        "country": "United Arab Emirates",
-        "capital city": "Abu Dhabi",
+        "name": "United Arab Emirates",
+        "capital_city": "Abu Dhabi",
         "abbreviation": "AE",
         "continent": "Asia"
     },
     {
-        "country": "United Kingdom",
-        "capital city": "London",
+        "name": "United Kingdom",
+        "capital_city": "London",
         "abbreviation": "UK",
         "continent": "Europe"
     },
     {
-        "country": "United States",
-        "capital city": "Washington",
+        "name": "United States",
+        "capital_city": "Washington",
         "abbreviation": "US",
         "continent": "North America"
     },
     {
-        "country": "United States Minor Outlying Islands",
-        "capital city": null,
+        "name": "United States Minor Outlying Islands",
+        "capital_city": null,
         "abbreviation": "UM",
         "continent": "Oceania"
     },
     {
-        "country": "Uruguay",
-        "capital city": "Montevideo",
+        "name": "Uruguay",
+        "capital_city": "Montevideo",
         "abbreviation": "UY",
         "continent": "South America"
     },
     {
-        "country": "Uzbekistan",
-        "capital city": "Toskent",
+        "name": "Uzbekistan",
+        "capital_city": "Toskent",
         "abbreviation": "UZ",
         "continent": "Asia"
     },
     {
-        "country": "Vanuatu",
-        "capital city": "Port-Vila",
+        "name": "Vanuatu",
+        "capital_city": "Port-Vila",
         "abbreviation": "VU",
         "continent": "Oceania"
     },
     {
-        "country": "Vatican City",
-        "capital city": "Vatican City",
+        "name": "Vatican City",
+        "capital_city": "Vatican City",
         "abbreviation": "VA",
         "continent": "Europe"
     },
     {
-        "country": "Venezuela",
-        "capital city": "Caracas",
+        "name": "Venezuela",
+        "capital_city": "Caracas",
         "abbreviation": "VE",
         "continent": "South America"
     },
     {
-        "country": "Vietnam",
-        "capital city": "Hanoi",
+        "name": "Vietnam",
+        "capital_city": "Hanoi",
         "abbreviation": "VN",
         "continent": "Asia"
     },
     {
-        "country": "Virgin Islands, British",
-        "capital city": "Road Town",
+        "name": "Virgin Islands, British",
+        "capital_city": "Road Town",
         "abbreviation": "VG",
         "continent": "North America"
     },
     {
-        "country": "Virgin Islands, U.S.",
-        "capital city": "Charlotte Amalie",
+        "name": "Virgin Islands, U.S.",
+        "capital_city": "Charlotte Amalie",
         "abbreviation": "VI",
         "continent": "North America"
     },
     {
-        "country": "Wales",
-        "capital city": "Cardiff",
+        "name": "Wales",
+        "capital_city": "Cardiff",
         "abbreviation": "GB",
         "continent": "Europe"
     },
     {
-        "country": "Wallis and Futuna",
-        "capital city": "Mata-Utu",
+        "name": "Wallis and Futuna",
+        "capital_city": "Mata-Utu",
         "abbreviation": "WF",
         "continent": "Oceania"
     },
     {
-        "country": "Western Sahara",
-        "capital city": "El-Aai",
+        "name": "Western Sahara",
+        "capital_city": "El-Aai",
         "abbreviation": "EH",
         "continent": "Africa"
     },
     {
-        "country": "Yemen",
-        "capital city": "Sanaa",
+        "name": "Yemen",
+        "capital_city": "Sanaa",
         "abbreviation": "YE",
         "continent": "Asia"
     },
     {
-        "country": "Zambia",
-        "capital city": "Lusaka",
+        "name": "Zambia",
+        "capital_city": "Lusaka",
         "abbreviation": "ZM",
         "continent": "Africa"
     },
     {
-        "country": "Zimbabwe",
-        "capital city": "Harare",
+        "name": "Zimbabwe",
+        "capital_city": "Harare",
         "abbreviation": "ZW",
         "continent": "Africa"
     }
