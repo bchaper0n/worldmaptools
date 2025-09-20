@@ -102,8 +102,16 @@ def main():
             break
 
     #print(json.dumps(countries, indent=3))
-    with open('countries.json', 'w', encoding='utf-8') as f:
+    countries_filename = "countries.json"
+    with open(countries_filename, 'w', encoding='utf-8') as f:
         json.dump(countries, f, ensure_ascii=False, indent=4)
+
+    # copy json to api
+    api_data_path = "../api/data"
+    if not Path(api_data_path).is_dir():
+        os.mkdir(api_data_path)
+
+    shutil.copyfile(f"./{countries_filename}", f"{api_data_path}/{countries_filename}")
 
 
 def clean_country_data():
