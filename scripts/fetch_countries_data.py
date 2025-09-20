@@ -75,7 +75,7 @@ def main():
     for i in range(len(countries)):
         if countries[i]["name"] == capitals[i]["country"]: # double check if countries match
             #print(countries[i])
-            countries[i].update({"capital_city": capitals[i]["city"]})
+            countries[i].update({"capital": capitals[i]["city"]})
             #print(countries[i]) 
         else:
             print(f"capital country mismatch at index {i}: {countries[i]["name"]} and {capitals[i]["country"]}")

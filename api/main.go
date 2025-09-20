@@ -20,9 +20,9 @@ import (
 )
 
 type Country struct {
-	Name         string `json:"country,omitempty"`
+	Name         string `json:"name,omitempty"`
 	Abbreviation string `json:"abbreviation,omitempty"`
-	Capital      string `json:"capital city,omitempty"`
+	Capital      string `json:"capital,omitempty"`
 	Continent    string `json:"continent,omitempty"`
 }
 
@@ -127,9 +127,13 @@ func initCountries(client *mongo.Client) {
 
 func main() {
 
-	// client := connect()
-	// initCountries(client)
-	// println("Inserted countries")
+	reset := true
+
+	if reset {
+		client := connect()
+		initCountries(client)
+		println("Inserted countries")
+	}
 
 	router := gin.Default()
 	router.GET("/countries", getCountries)
