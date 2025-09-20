@@ -8,10 +8,15 @@ import (
 
 	"encoding/json"
 
+	"go.mongodb.org/mongo-driver/v2/bson"
 	"go.mongodb.org/mongo-driver/v2/mongo"
 	"go.mongodb.org/mongo-driver/v2/mongo/options"
 
 	"github.com/joho/godotenv"
+
+	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 type Country struct {
@@ -19,6 +24,38 @@ type Country struct {
 	Abbreviation string `json:"abbreviation,omitempty"`
 	Capital      string `json:"capital city,omitempty"`
 	Continent    string `json:"continent,omitempty"`
+}
+
+// https://go.dev/doc/tutorial/web-service-gin
+func getCountries(c *gin.Context) {
+	println("Getting countries...")
+	client := connect()
+	coll := client.Database("map").Collection("countries")
+
+	filter := bson.D{}
+	sort := bson.D{{"name", 1}}
+	opts := options.Find().SetSort(sort)
+
+	cursor, err := coll.Find(context.TODO(), filter, opts)
+	if err != nil {
+		panic(err)
+	}
+
+	results := []Country{}
+
+	for cursor.Next(context.TODO()) {
+		var result Country
+		if err := cursor.Decode(&result); err != nil {
+			log.Fatal(err)
+		}
+		//fmt.Printf("%+v\n", result)
+		results = append(results, result)
+	}
+	if err := cursor.Err(); err != nil {
+		log.Fatal(err)
+	}
+
+	c.IndentedJSON(http.StatusOK, results)
 }
 
 func connect() *mongo.Client {
@@ -32,7 +69,6 @@ func connect() *mongo.Client {
 	// connect to db
 	client, err := mongo.Connect(options.Client().ApplyURI(uri))
 	if err != nil {
-		println("hi1")
 		panic(err)
 	}
 
@@ -43,27 +79,23 @@ func connect() *mongo.Client {
 		log.Fatalf("Failed to create collection: %v", err)
 	}
 
-	err = database.Collection("countries").Drop(context.TODO())
-	if err != nil {
-		panic(err)
-	}
-
 	return client
 }
 
-func main() {
-
-	client := connect()
-
-	defer func() {
-		if err := client.Disconnect(context.TODO()); err != nil {
-			println("hi2")
-			panic(err)
-		}
-	}()
-
+func initCountries(client *mongo.Client) {
 	database := client.Database("map")
 	coll := database.Collection("countries")
+
+	// defer func() {
+	// 	if err := client.Disconnect(context.TODO()); err != nil {
+	// 		panic(err)
+	// 	}
+	// }()
+
+	err := database.Collection("countries").Drop(context.TODO())
+	if err != nil {
+		panic(err)
+	}
 
 	countriesJSON, err := os.ReadFile("./data/countries.json")
 	if err != nil {
@@ -88,7 +120,25 @@ func main() {
 	}
 	fmt.Printf("Documents inserted: %v\n", len(result.InsertedIDs))
 
-	for _, id := range result.InsertedIDs {
-		fmt.Printf("Inserted document with _id: %v\n", id)
-	}
+	// for _, id := range result.InsertedIDs {
+	// 	fmt.Printf("Inserted document with _id: %v\n", id)
+	// }
+}
+
+func main() {
+
+	// client := connect()
+	// initCountries(client)
+	// println("Inserted countries")
+
+	router := gin.Default()
+	router.GET("/countries", getCountries)
+
+	router.Run("localhost:8080")
+
+	// defer func() {
+	// 	if err := client.Disconnect(context.TODO()); err != nil {
+	// 		panic(err)
+	// 	}
+	// }()
 }
