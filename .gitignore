@@ -8,6 +8,10 @@ node_modules
 .pnp
 .pnp.js
 
+# React Router
+/frontend/.react-router/
+/frontend/build/
+
 # for react
 coverage
 build
