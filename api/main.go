@@ -24,6 +24,7 @@ type Country struct {
 	Abbreviation string `json:"abbreviation,omitempty"`
 	Capital      string `json:"capital,omitempty"`
 	Continent    string `json:"continent,omitempty"`
+	Flag         string `json:"flag,omitempty"`
 }
 
 // https://go.dev/doc/tutorial/web-service-gin

@@ -9,11 +9,13 @@ import shutil
 from sys import platform
 from subprocess import check_output
 import stat
+import base64
 
 repo_download_path = "country-json"
 update = False
 
 data_path = "data"
+flags_path = "flags"
 country_data_filenames = ["country-by-name.json", "country-by-capital-city.json", "country-by-abbreviation.json", "country-by-continent.json", "country-by-geo-coordinates.json", "country-by-flag.json"]
 
 countries = []
@@ -63,7 +65,7 @@ def main():
     # get flags
     with open(os.path.join(data_path, country_data_filenames[fnum]), encoding='utf-8') as f:
         flags = json.load(f)
-
+            
     # rename 'country' key to 'name'
     for i in range(len(countries)):
         countries[i].update({"name": countries[i]["country"]})
@@ -101,6 +103,16 @@ def main():
             print(f"continent country mismatch at index {i}: {countries[i]["name"]} and {continents[i]["country"]}")
             break
 
+    # add flags
+    for i in range(len(countries)):
+        if countries[i]["name"] == flags[i]["country"]: # double check if countries match
+            #print(countries[i])
+            countries[i].update({"flag": flags[i]["flag_base64"].split(",")[1] if not flags[i]["flag_base64"] is None else flags[i]["flag_base64"]})
+            #print(countries[i]) 
+        else:
+            print(f"flags country mismatch at index {i}: {countries[i]["name"]} and {flags[i]["country"]}")
+            break
+
     #print(json.dumps(countries, indent=3))
     countries_filename = "countries.json"
     with open(countries_filename, 'w', encoding='utf-8') as f:
@@ -119,6 +131,7 @@ def clean_country_data():
     global capitals
     global abbrvs
     global continents
+    global flags
 
     # Ivory Coast wrong place
     ivory_coast = countries.pop(52)
@@ -135,6 +148,8 @@ def clean_country_data():
     capitals[215]["country"] = "The Democratic Republic of the Congo"
     abbrvs[216]["country"] = "The Democratic Republic of the Congo"
     continents[215]["country"] = "The Democratic Republic of the Congo"
+    flags[216]["country"] = "The Democratic Republic of the Congo"
+
 
     # missing Guernsey capital and continent
     guernsey = {"country": "Guernsey", "city": "Saint Peter Port"}
@@ -148,54 +163,75 @@ def clean_country_data():
     iom_2 = {"country": "Isle of Man", "continent": "Europe"}
     continents.insert(106, iom_2)
 
-    # missing Jersey capital and continent
+    # missing Jersey capital, continent, flag
     jersey = {"country": "Jersey", "city": "St Helier"}
     capitals.insert(111, jersey)
     jersey_2 = {"country": "Jersey", "continent": "Europe"}
     continents.insert(111, jersey_2)
+    with open(os.path.join(flags_path, "jersey.txt"), encoding='utf-8') as f:
+        base64_str = f.read()
+        jersey_3 = {"country": "Jersey", "flag_base64": base64_str}
+        flags.insert(111, jersey_3)
+
+    # missing Montenegro flag
+    with open(os.path.join(flags_path, "montenegro.txt"), encoding='utf-8') as f:
+        base64_str = f.read()
+        montenegro = {"country": "Montenegro", "flag_base64": base64_str}
+        flags.insert(145, montenegro)
 
     # Montserrat wrong place
     montserrat = countries.pop(145)
     countries.insert(146, montserrat)
 
-    # missing Timor-Leste capital and continent
+    # missing Timor-Leste capital, continent, flag
     t_l = {"country": "Timor-Leste", "city": "Dili"}
     capitals.insert(219, t_l)
     t_l_2 = {"country": "Timor-Leste", "continent": "Asia"}
     continents.insert(219, t_l_2)
+    with open(os.path.join(flags_path, "timor-leste.txt"), encoding='utf-8') as f:
+        base64_str = f.read()
+        montenegro = {"country": "Timor-Leste", "flag_base64": base64_str}
+        flags.insert(219, montenegro)
 
+    #remove Holy See + readdas Vatican City
+    vc = countries.pop(95)
+    vc_cap = capitals.pop(95)
+    vc_abbr = abbrvs.pop(94)
+    vc_cont = continents.pop(95)
+    vc_flag = flags.pop(95)
+    
     #add and rename Vatican City
-    vc = {"name": "Vatican City"}
-    countries.insert(238, vc)
-    capitals.pop(239)
-    vc_cap = {"country": "Vatican City", "city": "Vatican City"}
-    capitals.insert(238, vc_cap)
-    vc_abbr = {"country": "Vatican City", "abbreviation": "VA"}
-    abbrvs.insert(236, vc_abbr)
-    vc_cont = {"country": "Vatican City", "continent": "Europe"}
-    continents.insert(238, vc_cont)
+    vc["name"] = "Vatican City"
+    countries.insert(237, vc)
+    capitals.pop(238)
+
+    vc_cap["country"] = "Vatican City"
+    capitals.insert(237, vc_cap)
+
+    vc_abbr["country"] = "Vatican City"
+    abbrvs.insert(235, vc_abbr)
+
+    vc_cont["country"] = "Vatican City"
+    continents.insert(237, vc_cont)
+    
+    vc_flag["country"] = "Vatican City"
+    flags.insert(237, vc_flag)
 
     # Israel wrong order
-    is_1 = countries.pop(105)
-    countries.insert(106, is_1)
-    is_2 = capitals.pop(105)
-    capitals.insert(106, is_2)
-    is_3 = continents.pop(105)
-    continents.insert(106, is_3)
+    is_1 = countries.pop(104)
+    countries.insert(105, is_1)
+    is_2 = capitals.pop(104)
+    capitals.insert(105, is_2)
+    is_3 = continents.pop(104)
+    continents.insert(105, is_3)
 
     # missing England, Scotland, and Wales abbrv
     en = {"country": "England", "abbreviation": "GB"}
     abbrvs.insert(63, en)
     sc = {"country": "Scotland", "abbreviation": "GB"}
-    abbrvs.insert(193, sc)
+    abbrvs.insert(192, sc)
     w = {"country": "Wales", "abbreviation": "GB"}
-    abbrvs.insert(243, w)
-
-    #remove Holy See
-    countries.pop(95)
-    capitals.pop(95)
-    abbrvs.pop(95)
-    continents.pop(95)
+    abbrvs.insert(242, w)
 
     # missing British Indian Ocean Territory capital
     capitals[30]["city"] = "Diego Garcia"

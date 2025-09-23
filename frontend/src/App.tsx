@@ -1,6 +1,6 @@
 import {useEffect, useState } from 'react'
 import './App.css'
-import Country from './Country'
+import CountryCard from './components/CountryCard'
 import axios from 'axios'
 
 const client = axios.create({
@@ -9,22 +9,26 @@ const client = axios.create({
 
 function App() {
     
-  const [countries, showCountries] = useState([]);
+  const [countries, showCountryGrid] = useState([]);
 
     useEffect(() => {
       client.get('/countries').then((response) => {
-          showCountries(response.data);
+          showCountryGrid(response.data);
       });
     }, []);
 
     return (
-      countries.map((country: any, index) => (
-          <div key={index}>
-            {Country(country)}
-          </div>    
-          ))
+      <div className="container text-center">
+          <div className="row row-cols-4">
+            {countries.map((country: any, index) => (
+            <div key={index}>
+              {CountryCard(country)}
+            </div>    
+            ))}
+          </div>
+        </div>
     );  
      
 }    
 
-export default App
+export default App;
