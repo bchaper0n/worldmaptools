@@ -1,0 +1,1 @@
+mongoimport --verbose --uri "mongodb://localhost:27017" --username=$MONGO_INITDB_ROOT_USERNAME --password=$MONGO_INITDB_ROOT_PASSWORD --authenticationDatabase=admin --db=maps --collection=countries --file=/mongo-seed-jsons/countries.json --jsonArray
