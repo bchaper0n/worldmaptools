@@ -113,17 +113,14 @@ def main():
             print(f"flags country mismatch at index {i}: {countries[i]["name"]} and {flags[i]["country"]}")
             break
 
-    #print(json.dumps(countries, indent=3))
-    countries_filename = "countries.json"
-    with open(countries_filename, 'w', encoding='utf-8') as f:
-        json.dump(countries, f, ensure_ascii=False, indent=4)
-
     # copy json to api
-    api_data_path = "../api/data"
+    api_data_path = "../db/load-sh/data"
     if not Path(api_data_path).is_dir():
         os.mkdir(api_data_path)
 
-    shutil.copyfile(f"./{countries_filename}", f"{api_data_path}/{countries_filename}")
+    countries_filename = "countries.json"
+    with open(f"{api_data_path}/{countries_filename}", 'w', encoding='utf-8') as f:
+        json.dump(countries, f, ensure_ascii=False, indent=4)
 
 
 def clean_country_data():
@@ -236,8 +233,11 @@ def clean_country_data():
     # missing British Indian Ocean Territory capital
     capitals[30]["city"] = "Diego Garcia"
 
-    # missing South Georgia and the South Sandwich Islands capital
+    # missing South Georgia and the South Sandwich Islands capital and flag
     capitals[203]["city"] = "King Edward Point"
+    with open(os.path.join(flags_path, "south_georgia.txt"), encoding='utf-8') as f:
+        base64_str = f.read()
+        flags[203]["flag_base64"] = base64_str
 
 
 # get country data from repo and delete unneeded files
