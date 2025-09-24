@@ -13,7 +13,7 @@ function App() {
 
     useEffect(() => {
       client.get('/countries').then((response) => {
-          showCountryGrid(response.data);
+          showCountryGrid(response.data["countries"]);
       });
     }, []);
 
