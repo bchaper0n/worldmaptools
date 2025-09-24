@@ -1,5 +1,7 @@
 package main
 
+//structure from: https://medium.com/@godusan/building-a-restful-api-in-go-using-the-gin-framework-a-step-by-step-tutorial-part-1-2-70372ebfa988
+
 import (
 	"time"
 	"worldmaptools/wmt/configs"
